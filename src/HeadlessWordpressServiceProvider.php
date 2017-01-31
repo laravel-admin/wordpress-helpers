@@ -14,11 +14,11 @@ class HeadlessWordpressServiceProvider extends ServiceProvider
     public function boot()
     {
 		$this->publishes([
-			  __DIR__.'/../public/themes' => public_path(),
+			  __DIR__.'/../public/themes' => public_path('themes'),
 		], 'public');
 
 		$this->publishes([
-			  __DIR__.'/../public/wp-config.php' => public_path(),
+			  __DIR__.'/../public/wp-config.php' => public_path('wp-config.php'),
 		], 'public');
     }
 
