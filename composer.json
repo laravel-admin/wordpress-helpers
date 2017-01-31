@@ -9,7 +9,7 @@
     },
 	"autoload": {
         "psr-4": {
-            "LaravelAdmin\\HeadlessWordpress\\": "src/",
+            "LaravelAdmin\\HeadlessWordpress\\": "src/"
         }
     },
     "license": "MIT",
