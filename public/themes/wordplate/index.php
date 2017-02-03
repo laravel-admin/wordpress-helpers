@@ -1,18 +1,13 @@
-<?php get_header(); ?>
-
-<main role="main">
-  <?php if (have_posts()): while (have_posts()): the_post(); ?>
-      <article>
-        <header>
-          <h1><?php the_title(); ?></h1>
-        </header>
-        <?php the_content(); ?>
-      </article>
-  <?php endwhile; else: ?>
-    <article>
-      <p>Nothing to see.</p>
-    </article>
-  <?php endif; ?>
-</main>
-
-<?php get_footer();
+<!DOCTYPE html>
+<html <?php language_attributes(); ?>>
+<head>
+  <meta charset="<?php bloginfo('charset'); ?>">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width">
+</head>
+<body>
+	<center>
+		<h1>Nothing to see</h1>
+	</center>
+</body>
+</html>
