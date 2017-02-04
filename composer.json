@@ -1,5 +1,5 @@
 {
-    "name": "laravel-admin/headless-wordpress",
+    "name": "laravel-admin/wordpress-helpers",
     "description": "Helper classes for laravel-admin/wordpress",
     "type": "laravel-package",
 	"autoload": {
