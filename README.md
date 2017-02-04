@@ -68,3 +68,9 @@ Publish the public files
 ```
 artisan vendor:publish --tag="public"
 ```
+
+## Usage
+
+* Make sure your Laravel .env is configured correctly.
+* Go to /wordpress/wp-admin to start with setup your Wordpress site.
+* Configure your custom post types and taxonomies within public/themes/wordplate/library/posttypes
