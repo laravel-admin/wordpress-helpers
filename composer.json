@@ -1,12 +1,7 @@
 {
     "name": "laravel-admin/headless-wordpress",
-    "description": "Create a Laravel Application with Wordpress as CMS",
+    "description": "Helper classes for laravel-admin/wordpress",
     "type": "laravel-package",
-    "require": {
-        "jgrossi/corcel": "^1.4",
-        "wordplate/framework": "^4.3",
-        "wordplate/plate": "^2.2"
-    },
 	"autoload": {
         "psr-4": {
             "LaravelAdmin\\HeadlessWordpress\\": "src/"
