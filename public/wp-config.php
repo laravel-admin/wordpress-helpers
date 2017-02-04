@@ -50,11 +50,14 @@ define('WP_HOME', env('APP_URL'));
 
 
 /* Custom WordPress directory. */
-define('WP_SITEURL', env('WP_SITEURL', WP_HOME.'/'.env('WP_DIR', 'wordpress')));
+define('WP_SITEURL', WP_HOME.'/'.env('WP_DIR', 'wordpress'));
 
 /* Custom content directory. */
 define('WP_CONTENT_DIR', env('WP_CONTENT_DIR', __DIR__));
 define('WP_CONTENT_URL', env('WP_CONTENT_URL', WP_HOME));
+
+
+define('WP_TEMPLATE_DIR', env('WP_CONTENT_DIR', __DIR__.'/../resources/views/'));
 
 /* Set the trash to less days to optimize WordPress. */
 define('EMPTY_TRASH_DAYS', env('EMPTY_TRASH_DAYS', 7));
@@ -66,7 +69,7 @@ define('WP_DEFAULT_THEME', env('WP_THEME', 'wordplate'));
 define('WP_POST_REVISIONS', env('WP_POST_REVISIONS', 2));
 
 /* WordPress environment. */
-define('WP_ENV', env('WP_ENV', 'production'));
+define('WP_ENV', env('APP_ENV', 'production'));
 
 /* Cleanup image edits. */
 define('IMAGE_EDIT_OVERWRITE', env('IMAGE_EDIT_OVERWRITE', true));
@@ -109,9 +112,9 @@ $table_prefix = env('WP_PREFIX', 'wp_');
  * It is strongly recommended that plugin and theme developers use WP_DEBUG
  * in their development environments.
  */
-define('WP_DEBUG', env('WP_DEBUG', false));
-define('WP_DEBUG_DISPLAY', env('WP_DEBUG', false));
-define('SCRIPT_DEBUG', env('WP_DEBUG', false));
+define('WP_DEBUG', env('APP_DEBUG', false));
+define('WP_DEBUG_DISPLAY', env('APP_DEBUG', false));
+define('SCRIPT_DEBUG', env('APP_DEBUG', false));
 
 /* Add multisite support. */
 define('WP_ALLOW_MULTISITE', env('WP_ALLOW_MULTISITE', false));
